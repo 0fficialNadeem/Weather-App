@@ -94,4 +94,10 @@ body {
     margin: 10px;
 }
 
-
+.container-box{
+    display: none;
+}
+.error{
+   display: none;
+    
+}

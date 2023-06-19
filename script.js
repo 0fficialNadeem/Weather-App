@@ -7,6 +7,7 @@ async function getWeather(city) {
   let fetchRequest = await fetch(
     API_URL + `${city}&appid=${API_KEY}&units=metric`
   );
+  if(fetchRequest.ok){
   let jsonData = await fetchRequest.json();
 
   console.log(jsonData);
@@ -39,6 +40,12 @@ async function getWeather(city) {
     weatherIcon.src = "images/rain.png";
   } else if (state == "mist") {
     weatherIcon.src = "images/Mist.png";
+  }
+
+  document.getElementById("container-box").style.display = "block";
+  }else {
+    document.getElementById("container-box").style.display = "none";
+    document.getElementById("error").style.display = "block";
   }
 }
 

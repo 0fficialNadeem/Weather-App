@@ -18,6 +18,9 @@
       <input class="searchbox" type="text" placeholder="Enter a City">
       <button class="search-btn"><img src="images/search.png" alt="search-button"></button>
     </div>
+    <div id="error" class="error">
+      <p>Invalid City</p>
+    </div>
     <!-- Weather img + degrees + city -->
     <div id="container-box" class="container-box">
       <div class="weather">
