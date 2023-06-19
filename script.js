@@ -43,6 +43,7 @@ async function getWeather(city) {
   }
 
   document.getElementById("container-box").style.display = "block";
+  document.getElementById("error").style.display = "none";
   }else {
     document.getElementById("container-box").style.display = "none";
     document.getElementById("error").style.display = "block";
